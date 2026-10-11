@@ -70,7 +70,8 @@ main{max-width:1160px}
 .card .micro{margin:0}
 .card h3{margin:0;font:600 20px/24px Inter,system-ui,sans-serif;color:var(--sr-text)}
 .card p{margin:0;font-size:15px;line-height:20px;color:var(--sr-text-dim)}
-.cat{margin:32px 0 12px;padding-top:0;border-top:0}
+.cat{margin:32px 0 12px;padding-top:0;border-top:0;scroll-margin-top:12px}
+.topics{margin:0 0 8px}
 .add{margin-top:32px;padding:16px;border:1px dashed var(--sr-line);border-radius:var(--sr-radius)}
 .add h2{margin:0 0 8px;padding:0;border:0}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -81,27 +82,49 @@ main{max-width:1160px}
 <main>
 <p class="micro">Space Radar Lab</p>
 <h1>Tiny space simulators</h1>
-<div class="intro"><p class="lead">6 small pages, each teaching one idea about space. Every number is quoted from its source, and every page says what is and is not to scale. Open one and move the slider.</p></div>
-<h2 class="cat">Orbits and gravity</h2>
+<div class="intro"><p class="lead">24 small pages, each teaching one idea about space. Every number is quoted from its source, and every page says what is and is not to scale. Open one and move the slider.</p></div>
+<nav aria-label="Topics"><ul class="links topics"><li><a href="#cat-orbits-and-gravity">Orbits and gravity (8)</a></li><li><a href="#cat-planets-and-moons">Planets and moons (1)</a></li><li><a href="#cat-scale-and-distance">Scale and distance (1)</a></li><li><a href="#cat-light-and-time">Light and time (7)</a></li><li><a href="#cat-rockets-and-spaceflight">Rockets and spaceflight (1)</a></li><li><a href="#cat-cosmology-and-black-holes">Cosmology and black holes (6)</a></li></ul></nav>
+<h2 class="cat" id="cat-orbits-and-gravity">Orbits and gravity</h2>
 <ul class="grid">
+<li><a class="card" href="binary-dance-barycentre/index.html"><h3>Binary Dance</h3><p>Two stars really orbit a point between them, closer to the heavier one.</p></a></li>
+<li><a class="card" href="comet-tail-compass/index.html"><h3>Comet Tail Compass</h3><p>A comet&#x27;s tail always points away from the Sun, even when the comet is leaving.</p></a></li>
+<li><a class="card" href="five-parking-spots-lagrange-points/index.html"><h3>Five Parking Spots (Lagrange Points)</h3><p>In the rotating frame of two bodies there are five spots where a third thing can stay still.</p></a></li>
+<li><a class="card" href="gravity-slingshot-steal/index.html"><h3>Gravity Slingshot Steal</h3><p>A spacecraft can steal a little of a planet&#x27;s speed by swinging past it.</p></a></li>
+<li><a class="card" href="gravity-well-rubber-sheet/index.html"><h3>Gravity Well Rubber Sheet</h3><p>Mass bends the pattern of space-time like a ball in a stretched sheet, and light or marbles follow the dips.</p></a></li>
+<li><a class="card" href="janus-and-epimetheus-the-horseshoe-swap/index.html"><h3>Janus and Epimetheus</h3><p>Two Saturn moons share nearly one orbit and swap places every four years without colliding.</p></a></li>
 <li><a class="card" href="kepler-equal-areas/index.html"><h3>Kepler Equal Areas</h3><p>A planet sweeps out equal areas in equal times, so it speeds up as it nears the Sun.</p></a></li>
 <li><a class="card" href="throw-it-faster/index.html"><h3>Throw It Faster</h3><p>Throw a ball faster and it lands farther away; at about 7.9 km/s the ground curves away as fast as the ball falls, and it never lands.</p></a></li>
 </ul>
-<h2 class="cat">Planets and moons</h2>
+<h2 class="cat" id="cat-planets-and-moons">Planets and moons</h2>
 <ul class="grid">
 <li><a class="card" href="venus-day-race/index.html"><h3>Venus Day Race</h3><p>Venus spins once in 243 Earth days and circles the Sun in 225, so its day is longer than its year.</p></a></li>
 </ul>
-<h2 class="cat">Scale and distance</h2>
+<h2 class="cat" id="cat-scale-and-distance">Scale and distance</h2>
 <ul class="grid">
 <li><a class="card" href="planets-fit-moon-gap/index.html"><h3>Planets Fit Moon Gap</h3><p>The other seven planets laid side by side almost fit in the gap between Earth and the Moon: not quite at the average distance, yes at the farthest.</p></a></li>
 </ul>
-<h2 class="cat">Light and time</h2>
+<h2 class="cat" id="cat-light-and-time">Light and time</h2>
 <ul class="grid">
+<li><a class="card" href="crossing-the-galaxy-at-light-speed/index.html"><h3>Crossing the Galaxy at Light Speed</h3><p>A beam of light needs about 87,000 years to cross the Milky Way&#x27;s disc, longer than human history.</p></a></li>
+<li><a class="card" href="doppler-siren-waves/index.html"><h3>Doppler Siren Waves</h3><p>Waves bunch up in front of a moving source and stretch behind it, changing pitch or colour.</p></a></li>
+<li><a class="card" href="inverse-square-flashlight/index.html"><h3>Inverse Square Flashlight</h3><p>Light spreads as it travels, so at twice the distance it is four times dimmer.</p></a></li>
 <li><a class="card" href="light-speed-road-trip/index.html"><h3>Light Speed Road Trip</h3><p>Sunlight takes about 8 minutes to reach Earth and over four hours to reach Neptune.</p></a></li>
+<li><a class="card" href="redshift-stripes/index.html"><h3>Redshift Stripes</h3><p>The faster a galaxy flies away, the more its light shifts toward red.</p></a></li>
+<li><a class="card" href="stars-bunch-up-ahead/index.html"><h3>Stars Bunch Up Ahead</h3><p>At near light speed the stars crowd into a bright tunnel in front of you.</p></a></li>
+<li><a class="card" href="the-sun-vanishes-eight-minutes-later/index.html"><h3>The Sun Vanishes</h3><p>If the Sun vanished, we would keep seeing it and keep orbiting for 8 minutes 19 seconds.</p></a></li>
 </ul>
-<h2 class="cat">Rockets and spaceflight</h2>
+<h2 class="cat" id="cat-rockets-and-spaceflight">Rockets and spaceflight</h2>
 <ul class="grid">
 <li><a class="card" href="rocket-equation/index.html"><h3>Rocket Equation</h3><p>Each extra km/s of speed costs a fifth of what is left, so a rocket bound for orbit is almost all fuel.</p></a></li>
+</ul>
+<h2 class="cat" id="cat-cosmology-and-black-holes">Cosmology and black holes</h2>
+<ul class="grid">
+<li><a class="card" href="black-hole-lens-in-2d/index.html"><h3>Black Hole Lens in 2D</h3><p>A black hole bends light around itself, so a background star can show up twice or as a ring.</p></a></li>
+<li><a class="card" href="dark-matter-rotation-curve/index.html"><h3>Dark Matter Rotation Curve</h3><p>Stars at the edge of galaxies orbit nearly as fast as inner ones, which suggests unseen mass holds them.</p></a></li>
+<li><a class="card" href="galaxy-merger-dance/index.html"><h3>Galaxy Merger Dance</h3><p>Galaxies can collide and pass through each other, with their stars rarely touching.</p></a></li>
+<li><a class="card" href="spaghettification/index.html"><h3>Spaghettification</h3><p>Falling feet-first into a black hole, your feet are pulled harder than your head and you are stretched.</p></a></li>
+<li><a class="card" href="time-freezes-at-the-horizon/index.html"><h3>Time Freezes at the Horizon</h3><p>Seen from afar, a clock falling into a black hole ticks slower and slower and never quite crosses.</p></a></li>
+<li><a class="card" href="universe-timeline-scrub/index.html"><h3>Universe Timeline Scrub</h3><p>The universe is 13.8 billion years old, and humans arrived in the last sliver.</p></a></li>
 </ul>
 <section class="add" aria-labelledby="add-h">
 <h2 id="add-h">Add your own simulator</h2>
